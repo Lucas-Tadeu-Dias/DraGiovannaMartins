@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>@ViewData["Title"]</title>
+  <meta name="description" content="Odontologia estética e preventiva com atendimento humanizado. Clareamento, facetas, implantes, ortodontia e mais. Agende pelo WhatsApp." />
+  <meta property="og:title" content="Dra. Giovanna Martins — Odontologia premium" />
+  <meta property="og:description" content="Tratamentos odontológicos personalizados com conforto e tecnologia." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<header class="header">
+ <div class="nav-wrap">
+  <a class="identity" href="/#inicio"><span class="logo">✦</span><span><strong>Dra. Giovanna Martins</strong><small>CRO-MG 069415</small></span></a>
+  <nav id="nav"><a href="/#sobre">Sobre</a><a href="/#tratamentos">Tratamentos</a><a href="/#diferenciais">Diferenciais</a><a href="/#depoimentos">Depoimentos</a><a href="/#faq">Dúvidas</a><a href="/#contato">Contato</a></nav>
+  <a class="button compact desktop" href="https://wa.me/5531995561203?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noreferrer">Agendar</a>
+  <button id="menuButton" class="menu" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+ </div>
+</header>
+@RenderBody()
+<footer class="footer"><div class="footer-grid"><div><h3>Dra. Giovanna Martins</h3><p>CRO-MG 069415</p></div><div><b>Contato</b><p>(31) 99556-1203</p><a href="mailto:giovannamtns@outlook.com">giovannamtns@outlook.com</a></div><div><a href="https://www.instagram.com/dra.giovannamtins" target="_blank" rel="noreferrer">@@dra.giovannamtins</a><a asp-controller="Home" asp-action="Privacidade">Política de privacidade</a></div></div><p class="copyright">© @DateTime.Now.Year Dra. Giovanna Martins · CRO-MG 069415</p></footer>
+<a class="floating" href="https://wa.me/5531995561203?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noreferrer" aria-label="Agendar pelo WhatsApp">WA</a>
+<script src="~/js/site.js" asp-append-version="true"></script>
+</body></html>
